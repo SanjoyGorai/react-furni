@@ -5,6 +5,9 @@ import './index.css'
 import { BrowserRouter, createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ErrorPage from './componants/ErrorPage/ErrorPage.jsx';
 import Home from './componants/Home/Home.jsx';
+import ShopPage from './componants/Shop page/ShopPage.jsx'
+import Cart from './componants/Cart/Cart.jsx';
+import SingleProduct from './componants/Single Product/SingleProduct.jsx';
 
 
 const router = createBrowserRouter([
@@ -18,8 +21,16 @@ const router = createBrowserRouter([
         element: <Home/>
       },
       {
-        path: '',
-        element: ''
+        path: 'shop',
+        element: <ShopPage/>
+      },
+      {
+        path: 'singleproduct',
+        element: <SingleProduct/>
+      },
+      {
+        path: 'cart',
+        element: <Cart/>
       },
       {
         path: '',
