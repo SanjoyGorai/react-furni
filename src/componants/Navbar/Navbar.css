@@ -1,0 +1,10 @@
+.navbar{
+
+}
+.nav{
+    display: flex;
+}
+.nav li:hover{
+    color: red;
+    
+}
