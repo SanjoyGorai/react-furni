@@ -9,11 +9,12 @@ const ShopPage = () => {
 
   useEffect(() => {
     console.log('Use Effect is Called Axios');
-    axios.get('https://fakestoreapi.com/products')
+       axios.get('https://fakestoreapi.com/products')
       .then((data) => {
         console.log(data);
         setProducts(data.data);
-      })
+     
+     })
       .catch((error) => {
         console.log(error);
       })
@@ -29,6 +30,7 @@ const ShopPage = () => {
               <div className='w-60'>
                 <img src={product.image} alt="" className='w-40 h-60' />
                 <h2>{product.title}</h2>
+                <h2>{product.price}</h2>
               </div>
             )
           })
