@@ -12,8 +12,7 @@ const ShopPage = () => {
        axios.get('https://fakestoreapi.com/products')
       .then((data) => {
         console.log(data);
-        setProducts(data.data);
-     
+        setProducts(data.data);  
      })
       .catch((error) => {
         console.log(error);

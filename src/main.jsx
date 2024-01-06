@@ -22,7 +22,8 @@ const router = createBrowserRouter([
       },
       {
         path: 'shop',
-        element: <ShopPage/>
+        element: <ShopPage/>,
+        errorElement: <h1>No Network</h1>
       },
       {
         path: 'singleproduct',
